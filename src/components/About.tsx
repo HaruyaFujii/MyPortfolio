@@ -4,7 +4,6 @@ import Image from 'next/image';
 import book from "../assets/book.png"
 import pc from "../assets/pc.png"
 import card from "../assets/card.png"
-import finance from "../assets/finance.png"
 import stress from "../assets/stressfigure.png"
 
 const About = () => {
