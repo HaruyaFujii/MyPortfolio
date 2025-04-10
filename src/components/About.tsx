@@ -30,7 +30,7 @@ const About = () => {
                 <div className = "w-full md:col-span-3 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden">
                     <div className = "absolute inset-0 bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 opacity-30 animate-gradient-xy"></div>
                     <div className = "flex flex-row p-6">
-                        <Image src = {stress} alt = "stress" className = "w-auto h-[70px]"/>
+                        <Image src = {stress} alt = "stress" className = "w-auto h-[60px]"/>
                         <div className = "flex flex-col mt-4">
                             <h2 className = "text-2xl font-bold text-white/80">My Research</h2>
                             <p className = "text-lg text-white/70 mt-2">I am exploring about quantifying stress levels to avoid long-term effects of stress.</p>
