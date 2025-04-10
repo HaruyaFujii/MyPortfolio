@@ -10,7 +10,7 @@ const projects = [
         title: "Portfolio Website",
         desc: "My first portfolio website built with Next.js and Tailwind CSS.",
         devStack: "Next.js, Tailwind CSS",
-        link: "https://my-project-1p0edi3rt-haruyafujiis-projects.vercel.app",
+        link: "my-project-psi-smoky.vercel.app",
         git: "https://github.com/HaruyaFujii/MyPortfolio",
         src: project
     },
