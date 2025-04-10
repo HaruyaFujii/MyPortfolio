@@ -49,7 +49,7 @@ const Hero = () => {
                 </motion.div>            
 
             <p className = "text-center text-xl max-w-[500px] mx-auto mt-8 text-white/80">
-                I am a full-stack developer with a passion for creating dynamic and responsive web applications. I have experience in various technologies and frameworks, and I am always eager to learn more and improve my skills.
+                I am a student of Information Science and Technology, aiming to become an engineer. I would like to improve my skills.
             </p>
 
             <Image
