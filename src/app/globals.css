@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #000;
-  --foreground: #171717;
+  --background: #e6f7ff;
+  --foreground: #333;
 }
 
 @theme inline {
@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000;
-    --foreground: #ededed;
+    --background: #e6f7ff;
+    --foreground: #222;
   }
 }
 
@@ -27,11 +27,11 @@ body {
 
 /* 👇 ここに追加するとわかりやすいです！ */
 .hero-bg {
-  background: linear-gradient(to bottom, #000, #2B1942 35%, #8F5C55 60%, #DBAF6E 80%);
+  background: linear-gradient(to bottom, #e6f7ff, #d4f1f9 35%, #bde4f4 60%, #a6d8ef 80%);
 }
 
 .skills-bg {
-  background: linear-gradient(to_top, #000, #381a5f 80%);
+  background: linear-gradient(to top, #e6f7ff, #cceeff 80%);
 }
 
 @layer utilities {
@@ -50,7 +50,7 @@ body {
 }
 
 .animate-gradient-xy {
-  animation: gradient-xy 5s ease infinite;
+  animation: gradient-xy 3s ease infinite;
   background-size: 200% 200%;
 }
 

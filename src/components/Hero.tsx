@@ -4,30 +4,35 @@ import cursor from "../assets/icon1.png";
 import lightning from "../assets/icon2.png";
 import { motion } from "framer-motion";
 import mee from "../assets/mee.jpg";
+import balloon from "../assets/balloon.png";
 
 const Hero = () => {
     return (
-        // bg-[linear-gradient(to_bottom, #000, #2B1942_35%, #8F5C55_60%, #DBAF6E_80%)]
-        <div className="hero-bg py-24 relative z-10 overflow-clip bg-[linear-gradient(to_bottom, #000, #2B1942_35%, #8F5C55_60%, #DBAF6E_80%)]" id = "portfolio">
+        <div className="hero-bg py-24 relative z-10 overflow-clip" id="portfolio">
+            <div className="absolute rounded-[50%] w-[3000px] h-[1300px] top-[550px] left-[50%] -translate-x-1/2 bg-[radial-gradient(closest-side,#e6f7ff_80%,#d4f1f9)]"></div>
 
-            <div className = "absolute rounded-[50%] w-[3000px] h-[1300px] top-[550px] left-[50%] -translate-x-1/2 bg-[radial-gradient(closest-side,#000_80%,#2B1942)]"></div>
+            <div className="relative text-center">
+                <h1 className="text-[#007acc] text-8xl font-bold">Hi, I am</h1>
+                <h1 className="text-[#005f99] text-8xl font-bold">Haruya Fujii</h1>
+                <p className="text-[#333] text-xl mt-4 max-w-[600px] mx-auto">
+                    I am a student of Information Science and Technology, aiming to become an engineer. I would like to improve my skills.
+                </p>
+                <Image
+                    src={mee}
+                    alt="profile picture"
+                    className="h-auto w-auto max-w-[400px] mx-auto mt-8 rounded-full border-4 border-[#007acc]"
+                />
+            </div>
 
-            <div className = "relative">     
-                <div className = "text-8xl font-bold text-center">
-                    <h1 className = "text-[#98B4CE]">Hi, I am</h1>
-                    <h1 className = "text-[#E48A57]">Haruya Fujii</h1>
-                </div>
-
-                <motion.div
+            {/* Motion Elements */}
+            <motion.div
                     className = "hidden md:block absolute left-[280px] top-[170px]"
                     drag
                 >
                     <Image
-                        src = {cursor}
-                        height = "170"
-                        width = "170"
-                        alt = "cursor"
-                        className = ""
+                        src = {balloon}
+                        alt = "balloon"
+                        className = "h-[200px] w-auto"
                         draggable = "false"
                         />
 
@@ -38,27 +43,13 @@ const Hero = () => {
                     drag
                 >
                     <Image
-                        src = {lightning}
-                        height = "120"
-                        width = "120"
-                        alt = "message"
-                        className = ""
+                        src = {balloon}
+                        alt = "balloon"
+                        className = "h-[200px] w-auto"
                         draggable = "false"
                     />
 
-                </motion.div>            
-
-            <p className = "text-center text-xl max-w-[500px] mx-auto mt-8 text-white/80">
-                I am a student of Information Science and Technology, aiming to become an engineer. I would like to improve my skills.
-            </p>
-
-            <Image
-                src = {mee}
-                alt = "profile picture"
-                className = "h-auto w-auto max-w-[500px] mx-auto"
-            />
-        </div>
-
+                </motion.div> 
         </div>
     )
 }

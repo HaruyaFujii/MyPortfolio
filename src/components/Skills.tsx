@@ -2,31 +2,24 @@ import React from 'react';
 import { FaHtml5, FaCss3Alt, FaReact, FaJsSquare } from 'react-icons/fa';
 
 const skillIcons = [
-    { icon: <FaHtml5 size = {140} />, label: "HTML" },
-    { icon: <FaCss3Alt size = {140} />, label: "CSS" },
-    { icon: <FaReact size = {110} />, label: "React" },
-    { icon: <FaJsSquare size = {140} />, label: "JavaScript" },
+    { icon: <FaHtml5 size = {140} className="text-orange-500"/>, label: "HTML" },
+    { icon: <FaCss3Alt size = {140} className="text-blue-500"/>, label: "CSS" },
+    { icon: <FaReact size = {110} className="text-blue-400"/>, label: "React" },
+    { icon: <FaJsSquare size = {140} className="text-yellow-500"/>, label: "JavaScript" },
 ];
 
 const Skills = () => {
     return (
-        <div className = "bg-[linear-gradient(to_top,#000,#381a5f_80%)] py-32" id = "skills">
-            <div className = "text-white w-[400px] md:min-w-[950px] mx-auto p-8 text-center">
-                <h2 className = "text-6xl font-bold mb-4">What I do</h2>
-                <div className = "grid grid-cols-2 md:grid-cols-4 gap-6">
-                    {skillIcons.map((skill, index) => (
-                        <div
-                            key = {index}
-                            className = "h-[160px] w-[160px] md:h-[220px] md:w-[220px] flex flex-col justify-between items-center bg-white/10 p-4 rounded-xl">
-                                {skill.icon}
-                                <p className = "mt-2">{skill.label}</p>
-                        </div>
-                    ))}
-                </div>
-
+        <div className="max-w-[1200px] mx-auto bg-[#e6f7ff] text-[#005f99] p-8 rounded-lg" id="skills">
+            <h1 className="text-6xl font-bold text-center mb-8">My Skills</h1>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                {skillIcons.map((skill, index) => (
+                    <div key={index} className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md">
+                        {skill.icon}
+                        <p className="mt-4 text-lg font-semibold">{skill.label}</p>
+                    </div>
+                ))}
             </div>
-
-
         </div>
     )
 }
