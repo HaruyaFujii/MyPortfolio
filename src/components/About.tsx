@@ -16,7 +16,7 @@ const About = () => {
                 <div className="w-full md:col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-green-400 to-blue-400 opacity-30 animate-gradient-xy"></div>
                     <div className="flex flex-col md:flex-row p-6 relative z-10">
-                        <Image src={book} alt="book" className="w-auto h-[100px] md:h-[130px] mb-4 md:mb-0 md:mr-6" />
+                        <Image src={book} alt="book" className="w-auto h-[100px] md:h-[130px] object-contain mb-4 md:mb-0 md:mr-6" />
                         <div className="flex flex-col text-center md:text-left">
                             <h2 className="text-xl md:text-2xl font-bold text-[#005e99]">School</h2>
                             <p className="text-sm md:text-lg text-black/90 mt-2">
@@ -30,7 +30,7 @@ const About = () => {
                 <div className="w-full md:col-span-3 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 opacity-30 animate-gradient-xy"></div>
                     <div className="flex flex-col md:flex-row p-6 relative z-10">
-                        <Image src={stress} alt="stress" className="w-auto h-[40px] md:h-[50px] mb-4 md:mb-0 md:mr-6" />
+                        <Image src={stress} alt="stress" className="w-auto h-[40px] md:h-[60px] object-contain md:mt-8 mb-4 md:mb-0 md:mr-6" />
                         <div className="flex flex-col text-center md:text-left">
                             <h2 className="text-xl md:text-2xl font-bold text-[#005e99]">My Research</h2>
                             <p className="text-sm md:text-lg text-black/90 mt-2">
@@ -44,7 +44,7 @@ const About = () => {
                 <div className="w-full md:col-span-3 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-400 opacity-30 animate-gradient-xy"></div>
                     <div className="flex flex-col md:flex-row p-6 relative z-10">
-                        <Image src={card} alt="card" className="w-auto h-[100px] md:h-[130px] mb-4 md:mb-0 md:mr-6" />
+                        <Image src={card} alt="card" className="w-auto h-[100px] md:h-[130px] object-contain mb-4 md:mb-0 md:mr-6" />
                         <div className="flex flex-col text-center md:text-left">
                             <h2 className="text-xl md:text-2xl font-bold text-[#005e99]">Experience</h2>
                             <p className="text-sm md:text-lg text-black/90 mt-2">
@@ -58,7 +58,7 @@ const About = () => {
                 <div className="w-full md:col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-r from-teal-400 via-blue-400 to-teal-400 opacity-30 animate-gradient-xy"></div>
                     <div className="flex flex-col md:flex-row p-6 relative z-10">
-                        <Image src={pc} alt="pc" className="w-auto h-[100px] md:h-[130px] mb-4 md:mb-0 md:mr-6" />
+                        <Image src={pc} alt="pc" className="w-auto h-[100px] md:h-[130px] object-contain mb-4 md:mb-0 md:mr-6" />
                         <div className="flex flex-col text-center md:text-left">
                             <h2 className="text-xl md:text-2xl font-bold text-[#005e99]">Technical Skills</h2>
                             <p className="text-sm md:text-lg text-black/90 mt-2">
