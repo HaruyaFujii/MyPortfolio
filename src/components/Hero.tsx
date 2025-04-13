@@ -1,7 +1,5 @@
 "use client";
 import Image from "next/image";
-import cursor from "../assets/icon1.png";
-import lightning from "../assets/icon2.png";
 import { motion } from "framer-motion";
 import mee from "../assets/mee.jpg";
 import balloon from "../assets/balloon.png";
