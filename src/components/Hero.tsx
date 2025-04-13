@@ -18,7 +18,7 @@ const Hero = () => {
                 <Image
                     src={mee}
                     alt="profile picture"
-                    className="h-auto w-auto max-w-[400px] mx-auto mt-8 rounded-full border-4 border-[#007acc]"
+                    className="h-auto w-auto max-w-[380px] mx-auto mt-8 rounded-full border-4 border-[#007acc]"
                 />
             </div>
 
